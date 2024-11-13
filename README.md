@@ -10,10 +10,13 @@ Swagger interface will also be available on `http://localhost:8080/swagger-ui`.
 
 ## Docker
 
-## Endpoints
+Available on [dockerhub](https://hub.docker.com/r/makingsenseinfo/training-api).
 
-- GET `/people`
-- GET `/people/id`
-- POST `/people`
-- DELETE `/people/id`
-- POST `/people/reset`
+```
+docker pull makingsenseinfo/training-api
+docker run -p 8080:8080 makingsenseinfo/training-api
+```
+
+## Kubernetes
+
+Basic Kubernetes objects are available in [`.kubernetes`](./.kubernetes) folder.

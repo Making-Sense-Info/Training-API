@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: training-api
+  labels:
+    app: training-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: training-api
+  template:
+    metadata:
+      labels:
+        app: training-api
+    spec:
+      containers:
+        - name: training-api
+          image: makingsenseinfo/training-api:1.0.0
+          ports:
+            - containerPort: 8080

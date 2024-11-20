@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: training-api
-          image: makingsenseinfo/training-api:1.0.1
+          image: makingsenseinfo/training-api:1.0.2
           ports:
             - containerPort: 8080

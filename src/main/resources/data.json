@@ -26,7 +26,7 @@
     ],
     "created": "2014-12-09T13:50:51.644000Z",
     "edited": "2014-12-20T21:17:56.891000Z",
-    "id": "http://swapi.dev/api/people/1/"
+    "id": 1
   },
   {
     "name": "C-3PO",
@@ -51,7 +51,7 @@
     "starships": [],
     "created": "2014-12-10T15:10:51.357000Z",
     "edited": "2014-12-20T21:17:50.309000Z",
-    "id": "http://swapi.dev/api/people/2/"
+    "id": 2
   },
   {
     "name": "R2-D2",
@@ -76,7 +76,7 @@
     "starships": [],
     "created": "2014-12-10T15:11:50.376000Z",
     "edited": "2014-12-20T21:17:50.311000Z",
-    "id": "http://swapi.dev/api/people/3/"
+    "id": 3
   },
   {
     "name": "Darth Vader",
@@ -99,6 +99,6 @@
     "starships": ["http://swapi.dev/api/starships/13/"],
     "created": "2014-12-10T15:18:20.704000Z",
     "edited": "2014-12-20T21:17:50.313000Z",
-    "id": "http://swapi.dev/api/people/4/"
+    "id": 4
   }
 ]

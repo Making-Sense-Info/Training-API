@@ -36,10 +36,10 @@ public class DataService {
                 person.setName(personData.get("name"));
                 person.setHeight(personData.get("height"));
                 person.setMass(personData.get("mass"));
-                person.setHairColor(personData.get("hair_color"));
-                person.setSkinColor(personData.get("skin_color"));
-                person.setEyeColor(personData.get("eye_color"));
-                person.setBirthYear(personData.get("birth_year"));
+                person.setHairColor(personData.get("hairColor"));
+                person.setSkinColor(personData.get("skinColor"));
+                person.setEyeColor(personData.get("eyeColor"));
+                person.setBirthYear(personData.get("birthYear"));
                 person.setGender(personData.get("gender"));
                 personRepository.save(person);
             }

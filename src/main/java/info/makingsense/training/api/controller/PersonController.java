@@ -42,6 +42,14 @@ public class PersonController {
         return personRepository.save(person);
     }
 
+    @PutMapping("/{id}")
+    @Operation(summary = "Update person by ID", description = "Update an existing person's information")
+    public ResponseEntity<Person> updatePerson(@PathVariable Long id, @RequestBody Person updatedPerson) {
+        return personRepository.updatePerson(id, updatedPerson)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
     @DeleteMapping("/{id}")
     @Operation(summary = "Delete person by ID", description = "Delete a specific person by their ID")
     public ResponseEntity<Void> deletePerson(@PathVariable Long id) {
